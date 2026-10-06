@@ -1,0 +1,1200 @@
+{
+  "schema_version": 1,
+  "cards": [
+    {
+      "code": "MM-007",
+      "track": "motion",
+      "domain": "motion",
+      "name_ko": "방향성 스윕 전선",
+      "name_en": "directional sweep front",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "하이라이트가 왼쪽에서 오른쪽",
+        "좁은 하이라이트",
+        "사선 하이라이트",
+        "빛이 지나",
+        "highlight sweep",
+        "left to right",
+        "directional reveal",
+        "뒤쪽 조명이 강해지",
+        "틈이 열리면서",
+        "하이라이트 스윕",
+        "방향성 리빌"
+      ],
+      "visual_signatures": [
+        "a soft activation front travels continuously in the requested direction and reveals one controlled change"
+      ],
+      "prompt_fragments": [
+        "a soft activation front travels continuously in the requested direction and reveals one controlled change"
+      ],
+      "negative_fragments": [
+        "unrequested repeated bounce",
+        "wrong motion channel"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "unrequested repeated bounce",
+        "wrong motion channel"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "motion_sweep",
+          "title": "Cinema 4D Linear Field",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/html/FLINEAR.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "MM-015",
+      "track": "motion",
+      "domain": "motion",
+      "name_ko": "무키프레임 정속 드리프트",
+      "name_en": "keyframe-free constant drift",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "천천히 회전",
+        "일정하게 회전",
+        "slow continuous rotation",
+        "constant drift",
+        "slow rotation",
+        "rotates slowly",
+        "constant rotation"
+      ],
+      "visual_signatures": [
+        "one continuous low-speed drift proceeds without acceleration or random direction changes"
+      ],
+      "prompt_fragments": [
+        "one continuous low-speed drift proceeds without acceleration or random direction changes"
+      ],
+      "negative_fragments": [
+        "unrequested repeated bounce",
+        "wrong motion channel"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "unrequested repeated bounce",
+        "wrong motion channel"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "motion_drift",
+          "title": "Cinema 4D Time Effector",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/html/OETIME.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "MM-024",
+      "track": "motion",
+      "domain": "motion",
+      "name_ko": "스플라인 이즈·오버슈트",
+      "name_en": "spline ease and overshoot",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "오버슈트",
+        "안정",
+        "초점이 이동",
+        "부드럽게 감속",
+        "overshoot",
+        "smooth deceleration",
+        "settles",
+        "focus transfer",
+        "settle",
+        "rack focus"
+      ],
+      "visual_signatures": [
+        "the primary change eases in and decelerates smoothly near its final state without extra rebound"
+      ],
+      "prompt_fragments": [
+        "the primary change eases in and decelerates smoothly near its final state without extra rebound"
+      ],
+      "negative_fragments": [
+        "unrequested repeated bounce",
+        "wrong motion channel"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "unrequested repeated bounce",
+        "wrong motion channel"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "motion_ease",
+          "title": "Cinema 4D Keys and Interpolation",
+          "url": "https://help.maxon.net/c4d/2025/en-us/Content/html/10616.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "MM-027",
+      "track": "motion",
+      "domain": "motion",
+      "name_ko": "시간 재매핑·속도 램프",
+      "name_en": "time remapping and speed ramp",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "속도 변화",
+        "speed ramp",
+        "빠르게 가속",
+        "fast acceleration",
+        "quick acceleration"
+      ],
+      "visual_signatures": [
+        "the action changes speed only where explicitly requested and keeps one continuous direction"
+      ],
+      "prompt_fragments": [
+        "the action changes speed only where explicitly requested and keeps one continuous direction"
+      ],
+      "negative_fragments": [
+        "unrequested repeated bounce",
+        "wrong motion channel"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "unrequested repeated bounce",
+        "wrong motion channel"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "motion_speed",
+          "title": "Cinema 4D Time Track",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/html/10834.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-001",
+      "track": "redshift",
+      "domain": "lighting",
+      "name_ko": "Area Light 크기·형태 → 하이라이트/그림자",
+      "name_en": "area light size and shape to highlight and shadow",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "area light",
+        "좁은 하이라이트",
+        "사선 하이라이트",
+        "뒤쪽 조명",
+        "grazing light",
+        "backlight",
+        "narrow highlight",
+        "diagonal highlight",
+        "grazing highlight"
+      ],
+      "visual_signatures": [
+        "use one broad controlled light source to define a readable highlight width and a coherent soft shadow"
+      ],
+      "prompt_fragments": [
+        "use one broad controlled light source to define a readable highlight width and a coherent soft shadow"
+      ],
+      "negative_fragments": [
+        "global brightness pumping",
+        "source-free reflections"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "global brightness pumping",
+        "source-free reflections"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "lighting",
+          "title": "Redshift Physical Light",
+          "url": "https://help.maxon.net/c4d/2025/en-us/Subsystems/Default/Content/html/Physical%2BLight.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        },
+        {
+          "source_id": "light_parameters",
+          "title": "Common Redshift Light Parameters",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/_REDSHIFT_/html/Common%2BRedshift%2BLight%2BParameters.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-003",
+      "track": "redshift",
+      "domain": "lighting",
+      "name_ko": "Spot → 원뿔형 집중광·컷오프",
+      "name_en": "spot cone concentration and cutoff",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "방향성 있는 빛줄기",
+        "틈에 연결",
+        "directional light shafts",
+        "focused beam",
+        "directional source",
+        "directional light",
+        "source-connected",
+        "physical light source"
+      ],
+      "visual_signatures": [
+        "a confined directional light passes through the stated opening and remains connected to its physical source"
+      ],
+      "prompt_fragments": [
+        "a confined directional light passes through the stated opening and remains connected to its physical source"
+      ],
+      "negative_fragments": [
+        "global brightness pumping",
+        "source-free reflections"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "global brightness pumping",
+        "source-free reflections"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "lighting",
+          "title": "Redshift Physical Light",
+          "url": "https://help.maxon.net/c4d/2025/en-us/Subsystems/Default/Content/html/Physical%2BLight.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        },
+        {
+          "source_id": "light_parameters",
+          "title": "Common Redshift Light Parameters",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/_REDSHIFT_/html/Common%2BRedshift%2BLight%2BParameters.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-006",
+      "track": "redshift",
+      "domain": "lighting",
+      "name_ko": "Spread/Directionality → 반사 길이·집중도",
+      "name_en": "light spread and directionality",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "좁은 반사",
+        "반사 길이",
+        "narrow reflection",
+        "directionality",
+        "light spread"
+      ],
+      "visual_signatures": [
+        "Describe the light spread and direction separately so the reflection concentration has a stated cause."
+      ],
+      "prompt_fragments": [
+        "Describe the light spread and direction separately so the reflection concentration has a stated cause."
+      ],
+      "negative_fragments": [
+        "global brightness pumping",
+        "source-free reflections"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "global brightness pumping",
+        "source-free reflections"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "lighting",
+          "title": "Redshift Physical Light",
+          "url": "https://help.maxon.net/c4d/2025/en-us/Subsystems/Default/Content/html/Physical%2BLight.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        },
+        {
+          "source_id": "light_parameters",
+          "title": "Common Redshift Light Parameters",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/_REDSHIFT_/html/Common%2BRedshift%2BLight%2BParameters.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-009",
+      "track": "redshift",
+      "domain": "lighting",
+      "name_ko": "Rim Light → 실루엣 분리",
+      "name_en": "rim light silhouette separation",
+      "lifecycle_status": "experimental",
+      "derived_only": true,
+      "evidence_level": "derived",
+      "confidence": "low",
+      "aliases": [
+        "얇은 가장자리부터 내부 빛",
+        "가장자리 빛",
+        "edge backlight",
+        "rim separation",
+        "thin edge",
+        "edge illumination",
+        "rim light"
+      ],
+      "visual_signatures": [
+        "place a physical back or side light so a thin edge separates from the background without becoming a standalone effect"
+      ],
+      "prompt_fragments": [
+        "place a physical back or side light so a thin edge separates from the background without becoming a standalone effect"
+      ],
+      "negative_fragments": [
+        "global brightness pumping",
+        "source-free reflections"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "global brightness pumping",
+        "source-free reflections"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "lighting",
+          "title": "Redshift Physical Light",
+          "url": "https://help.maxon.net/c4d/2025/en-us/Subsystems/Default/Content/html/Physical%2BLight.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        },
+        {
+          "source_id": "light_parameters",
+          "title": "Common Redshift Light Parameters",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/_REDSHIFT_/html/Common%2BRedshift%2BLight%2BParameters.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-011",
+      "track": "redshift",
+      "domain": "material",
+      "name_ko": "Roughness → 하이라이트 폭·선명도",
+      "name_en": "roughness to highlight width and sharpness",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "새틴",
+        "roughness",
+        "반사 폭",
+        "낮은 대비의 표면 편차",
+        "satin metal",
+        "satin-metal",
+        "satin silver",
+        "roughness variation",
+        "satin surface"
+      ],
+      "visual_signatures": [
+        "keep a satin reflection broad and restrained while preserving the base color and fine surface texture"
+      ],
+      "prompt_fragments": [
+        "keep a satin reflection broad and restrained while preserving the base color and fine surface texture"
+      ],
+      "negative_fragments": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "material",
+          "title": "Redshift Standard Material",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Standard_Material.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-014",
+      "track": "redshift",
+      "domain": "material",
+      "name_ko": "Coat → 독립 상부 반사층",
+      "name_en": "coat independent top reflection layer",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "코팅층",
+        "얇은 투명 코팅",
+        "transparent coating layer",
+        "coat layer",
+        "clear coat",
+        "transparent coat",
+        "coating layer"
+      ],
+      "visual_signatures": [
+        "reveal a thin clear top reflection layer separately from the underlying satin-metal reflection"
+      ],
+      "prompt_fragments": [
+        "reveal a thin clear top reflection layer separately from the underlying satin-metal reflection"
+      ],
+      "negative_fragments": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "material",
+          "title": "Redshift Standard Material",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Standard_Material.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-015",
+      "track": "redshift",
+      "domain": "material",
+      "name_ko": "Transmission/Refraction → 투명·흡수·굴절",
+      "name_en": "transmission and refraction transparency and absorption",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "투명",
+        "transmission",
+        "refraction",
+        "transparent object"
+      ],
+      "visual_signatures": [
+        "Use transmission and refraction only for the explicitly requested transparent material while maintaining its solid geometry."
+      ],
+      "prompt_fragments": [
+        "Use transmission and refraction only for the explicitly requested transparent material while maintaining its solid geometry."
+      ],
+      "negative_fragments": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "material",
+          "title": "Redshift Standard Material",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Standard_Material.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-016",
+      "track": "redshift",
+      "domain": "material",
+      "name_ko": "SSS → 내부 산란·두께감",
+      "name_en": "subsurface scattering internal diffusion",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "반투명 오브젝트",
+        "내부 빛",
+        "subsurface",
+        "translucent solid",
+        "sss",
+        "solid translucent",
+        "internal diffusion"
+      ],
+      "visual_signatures": [
+        "keep the object solid while backlight diffuses through thin regions and leaves thicker regions comparatively dense"
+      ],
+      "prompt_fragments": [
+        "keep the object solid while backlight diffuses through thin regions and leaves thicker regions comparatively dense"
+      ],
+      "negative_fragments": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "material",
+          "title": "Redshift Standard Material",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Standard_Material.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-018",
+      "track": "redshift",
+      "domain": "material",
+      "name_ko": "Emission → 자체 발광·주변 영향",
+      "name_en": "emission self illumination and surrounding influence",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "자체 발광",
+        "emission",
+        "emissive surface",
+        "self-emitting"
+      ],
+      "visual_signatures": [
+        "Keep surface emission distinct from a lens or post-processing glow."
+      ],
+      "prompt_fragments": [
+        "Keep surface emission distinct from a lens or post-processing glow."
+      ],
+      "negative_fragments": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "material",
+          "title": "Redshift Standard Material",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Standard_Material.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-019",
+      "track": "redshift",
+      "domain": "material",
+      "name_ko": "Bump/Normal → 실루엣 불변 미세결",
+      "name_en": "bump and normal silhouette invariant micro detail",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "미세 스크래치",
+        "표면 편차",
+        "bump normal",
+        "micro scratch relief",
+        "micro scratches",
+        "micro-scratch",
+        "shading normal",
+        "grazing highlight"
+      ],
+      "visual_signatures": [
+        "let grazing highlights reveal shallow surface-normal detail while geometry and silhouette remain unchanged"
+      ],
+      "prompt_fragments": [
+        "let grazing highlights reveal shallow surface-normal detail while geometry and silhouette remain unchanged"
+      ],
+      "negative_fragments": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "material",
+          "title": "Redshift Standard Material",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Standard_Material.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-020",
+      "track": "redshift",
+      "domain": "material",
+      "name_ko": "Displacement → 실제 표면 형상 변화",
+      "name_en": "displacement real surface geometry change",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "실루엣 변형",
+        "실제 표면 형상",
+        "displacement",
+        "changing geometry"
+      ],
+      "visual_signatures": [
+        "Change actual surface geometry only when explicitly requested, and check against shape-preservation constraints."
+      ],
+      "prompt_fragments": [
+        "Change actual surface geometry only when explicitly requested, and check against shape-preservation constraints."
+      ],
+      "negative_fragments": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "material",
+          "title": "Redshift Standard Material",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Standard_Material.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-021",
+      "track": "redshift",
+      "domain": "material",
+      "name_ko": "Micro Surface Imperfection → 스크래치·지문·사용감",
+      "name_en": "micro surface imperfection wear and fingerprints",
+      "lifecycle_status": "experimental",
+      "derived_only": true,
+      "evidence_level": "derived",
+      "confidence": "low",
+      "aliases": [
+        "미세 스크래치",
+        "사용감",
+        "micro surface imperfection",
+        "surface-locked scratches",
+        "micro scratches",
+        "micro-scratch",
+        "surface-locked",
+        "surface imperfection"
+      ],
+      "visual_signatures": [
+        "combine sparse surface-locked scratches with low-contrast roughness variation; keep every mark fixed to the product"
+      ],
+      "prompt_fragments": [
+        "combine sparse surface-locked scratches with low-contrast roughness variation; keep every mark fixed to the product"
+      ],
+      "negative_fragments": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "texture swimming",
+        "unrequested geometry change"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "material",
+          "title": "Redshift Standard Material",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Standard_Material.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-022",
+      "track": "redshift",
+      "domain": "camera",
+      "name_ko": "Focal Length/Sensor/FOV → 압축·왜곡·공간감",
+      "name_en": "focal length sensor and FOV compression and space",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "초점거리",
+        "원근 압축",
+        "focal length",
+        "camera distance"
+      ],
+      "visual_signatures": [
+        "Distinguish a focal-length change in field of view from moving the camera position."
+      ],
+      "prompt_fragments": [
+        "Distinguish a focal-length change in field of view from moving the camera position."
+      ],
+      "negative_fragments": [
+        "unrequested camera translation",
+        "flat full-frame blur"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "unrequested camera translation",
+        "flat full-frame blur"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "camera",
+          "title": "Redshift Camera",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Redshift_Camera_Object.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-023",
+      "track": "redshift",
+      "domain": "camera",
+      "name_ko": "DOF + Bokeh → 초점 위계·배경 형상",
+      "name_en": "depth of field and bokeh focus hierarchy",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "초점이 전경에서",
+        "제품 로고로 이동",
+        "흐리게 보이고",
+        "rack focus",
+        "depth of field",
+        "bokeh",
+        "focus transfer",
+        "foreground",
+        "depth-dependent bokeh"
+      ],
+      "visual_signatures": [
+        "preserve sharp product geometry at the active focus plane and keep defocus dependent on scene depth"
+      ],
+      "prompt_fragments": [
+        "preserve sharp product geometry at the active focus plane and keep defocus dependent on scene depth"
+      ],
+      "negative_fragments": [
+        "unrequested camera translation",
+        "flat full-frame blur"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "unrequested camera translation",
+        "flat full-frame blur"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "camera",
+          "title": "Redshift Camera",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Redshift_Camera_Object.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-024",
+      "track": "redshift",
+      "domain": "camera",
+      "name_ko": "Exposure → 밝기·하이라이트 유지·적응",
+      "name_en": "photographic exposure and highlight retention",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "노출",
+        "exposure",
+        "brightness adaptation"
+      ],
+      "visual_signatures": [
+        "Separate a global camera-exposure change from a local lighting change."
+      ],
+      "prompt_fragments": [
+        "Separate a global camera-exposure change from a local lighting change."
+      ],
+      "negative_fragments": [
+        "unrequested camera translation",
+        "flat full-frame blur"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "unrequested camera translation",
+        "flat full-frame blur"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "camera",
+          "title": "Redshift Camera",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Redshift_Camera_Object.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-027",
+      "track": "redshift",
+      "domain": "camera",
+      "name_ko": "Lens Effects → distortion·vignette·bloom·flare·streak",
+      "name_en": "lens effects distortion vignette bloom flare streak",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "bloom",
+        "flare",
+        "streak",
+        "vignette",
+        "lens distortion"
+      ],
+      "visual_signatures": [
+        "Apply only the requested restrained lens effects; keep defocus and surface emission separate."
+      ],
+      "prompt_fragments": [
+        "Apply only the requested restrained lens effects; keep defocus and surface emission separate."
+      ],
+      "negative_fragments": [
+        "unrequested camera translation",
+        "flat full-frame blur"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "unrequested camera translation",
+        "flat full-frame blur"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "camera",
+          "title": "Redshift Camera",
+          "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Redshift_Camera_Object.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-028",
+      "track": "redshift",
+      "domain": "atmosphere",
+      "name_ko": "Fog → 가시거리·공기 원근",
+      "name_en": "fog visibility distance and aerial perspective",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "안개",
+        "거리 안개",
+        "fog",
+        "aerial perspective",
+        "thin fog"
+      ],
+      "visual_signatures": [
+        "reduce distant contrast progressively through scene depth while keeping near product edges readable"
+      ],
+      "prompt_fragments": [
+        "reduce distant contrast progressively through scene depth while keeping near product edges readable"
+      ],
+      "negative_fragments": [
+        "flat overlay",
+        "source-free light shafts"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "flat overlay",
+        "source-free light shafts"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "atmosphere",
+          "title": "Redshift Standard Volume",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/_REDSHIFT_/html/Material%2BStandard%2BVolume.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-029",
+      "track": "redshift",
+      "domain": "atmosphere",
+      "name_ko": "Volume Scattering → 매질 속 빛의 확산·흡수",
+      "name_en": "volume scattering diffusion and absorption",
+      "lifecycle_status": "experimental",
+      "derived_only": false,
+      "evidence_level": "editorial_with_background_sources",
+      "confidence": "low",
+      "aliases": [
+        "빛줄기",
+        "얇은 안개",
+        "매질",
+        "volume scattering",
+        "atmospheric medium",
+        "participating medium",
+        "light shafts"
+      ],
+      "visual_signatures": [
+        "let light scatter only inside the participating medium with gradual distance attenuation and spatially locked density"
+      ],
+      "prompt_fragments": [
+        "let light scatter only inside the participating medium with gradual distance attenuation and spatially locked density"
+      ],
+      "negative_fragments": [
+        "flat overlay",
+        "source-free light shafts"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "flat overlay",
+        "source-free light shafts"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "atmosphere",
+          "title": "Redshift Standard Volume",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/_REDSHIFT_/html/Material%2BStandard%2BVolume.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    },
+    {
+      "code": "RS-VM-030",
+      "track": "redshift",
+      "domain": "atmosphere",
+      "name_ko": "God Rays → 광선 가시화와 그림자",
+      "name_en": "god rays visible light shafts",
+      "lifecycle_status": "experimental",
+      "derived_only": true,
+      "evidence_level": "derived",
+      "confidence": "low",
+      "aliases": [
+        "빛줄기",
+        "틈이 열리",
+        "광원과 틈에 연결",
+        "god rays",
+        "light shafts",
+        "occluding gap",
+        "source-connected"
+      ],
+      "visual_signatures": [
+        "build visible light shafts from a directional source, participating medium, and a physical gap that shapes the rays"
+      ],
+      "prompt_fragments": [
+        "build visible light shafts from a directional source, participating medium, and a physical gap that shapes the rays"
+      ],
+      "negative_fragments": [
+        "flat overlay",
+        "source-free light shafts"
+      ],
+      "success_criteria": [
+        "The requested change is visible without introducing unrelated motion."
+      ],
+      "failure_signatures": [
+        "flat overlay",
+        "source-free light shafts"
+      ],
+      "suitability": {},
+      "related": [],
+      "conflicts": [],
+      "sources": [
+        {
+          "source_id": "atmosphere",
+          "title": "Redshift Standard Volume",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/_REDSHIFT_/html/Material%2BStandard%2BVolume.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        },
+        {
+          "source_id": "light_parameters",
+          "title": "Common Redshift Light Parameters",
+          "url": "https://help.maxon.net/c4d/2026/en-us/Content/_REDSHIFT_/html/Common%2BRedshift%2BLight%2BParameters.html",
+          "scope": "Background concept only; prompt composition and model behavior are editorial hypotheses."
+        }
+      ],
+      "reference_requirement": "Use only references the user actually supplies.",
+      "time_variability": "Explicitly requested change only.",
+      "limitations": "Prompt behavior and model-specific control remain untested."
+    }
+  ]
+}

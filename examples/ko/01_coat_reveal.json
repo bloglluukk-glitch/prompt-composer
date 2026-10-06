@@ -1,0 +1,79 @@
+{
+  "fixture_id": "01_coat_reveal",
+  "request_id": "dry-coat-reveal",
+  "user_brief": "어두운 배경의 새틴 메탈 제품이 있다.\n좁은 하이라이트가 왼쪽에서 오른쪽으로 지나가면서 표면을 드러낸다.\n마지막에는 기본 새틴 표면 위에 얇은 투명 코팅층이 형성된다.\n한 번만 작게 오버슈트한 뒤 단단하게 안정된다.\nStart와 End 이미지를 사용한다.\n",
+  "input_mode": "start_end",
+  "assets": {
+    "start_image": "start.png",
+    "middle_image": null,
+    "end_image": "end.png",
+    "reference_images": [],
+    "reference_video": null
+  },
+  "output": {
+    "type": "video",
+    "duration_seconds": 5,
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080"
+  },
+  "subject": {
+    "description": "새틴 메탈 제품",
+    "identity_must_remain": true,
+    "geometry_must_remain": true,
+    "logo_must_remain": true,
+    "composition_must_remain": true,
+    "background_must_remain": true
+  },
+  "motion_intent": {
+    "primary_action": "왼쪽에서 오른쪽으로 이동하는 하이라이트 리빌",
+    "direction": "left_to_right",
+    "overshoot": "subtle_once",
+    "settle": "firm_early"
+  },
+  "visual_intent": {
+    "material": "새틴 금속 위 얇은 투명 코팅층",
+    "lighting": "좁은 하이라이트 스윕",
+    "camera": null,
+    "atmosphere": null,
+    "color": null,
+    "lens_effects": null
+  },
+  "curve": {
+    "curve_profile_id": null,
+    "curve_data": null,
+    "feeling_tags": []
+  },
+  "preferences": {
+    "liked": [],
+    "disliked": []
+  },
+  "model_target": "generic",
+  "constraints": {
+    "must_include": [
+      "thin transparent coat",
+      "left-to-right highlight sweep",
+      "single subtle overshoot"
+    ],
+    "must_avoid": [
+      "melt",
+      "texture morph",
+      "global brightness pumping"
+    ]
+  },
+  "expectations": {
+    "selected_all": [
+      "MM-007",
+      "MM-024",
+      "RS-VM-001",
+      "RS-VM-011",
+      "RS-VM-014"
+    ],
+    "must_exclude": [
+      "RS-VM-015",
+      "RS-VM-018",
+      "RS-VM-020"
+    ]
+  },
+  "example_notice": "Placeholder asset names are not bundled media. The compiler never opens them."
+}

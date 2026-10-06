@@ -1,0 +1,85 @@
+{
+  "fixture_id": "06_curve_timing",
+  "request_id": "dry-curve-timing",
+  "user_brief": "제품의 단일 이동이 짧게 멈춘 뒤 빠르게 가속하고, 목표 근처에서 부드럽게 감속한다.\n한 번만 작게 넘었다가 한 번 줄어든 반동으로 일찍 안정된다.\n",
+  "input_mode": "text_only",
+  "assets": {
+    "start_image": null,
+    "middle_image": null,
+    "end_image": null,
+    "reference_images": [],
+    "reference_video": null
+  },
+  "output": {
+    "type": "video",
+    "duration_seconds": 4,
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080"
+  },
+  "subject": {
+    "description": "단일 이동",
+    "identity_must_remain": true,
+    "geometry_must_remain": true,
+    "logo_must_remain": true,
+    "composition_must_remain": true,
+    "background_must_remain": true
+  },
+  "motion_intent": {
+    "primary_action": "하나의 목적 있는 이동",
+    "acceleration": "fast",
+    "deceleration": "smooth",
+    "overshoot": "subtle",
+    "rebound": "once_reduced",
+    "settle": "early"
+  },
+  "visual_intent": {
+    "material": null,
+    "lighting": null,
+    "camera": "locked",
+    "atmosphere": null,
+    "color": null,
+    "lens_effects": null
+  },
+  "curve": {
+    "curve_profile_id": null,
+    "curve_data": {
+      "initial_hold": "short",
+      "acceleration": "fast",
+      "deceleration": "smooth",
+      "overshoot": "subtle",
+      "rebound_count": 1,
+      "settle": "early",
+      "final_hold": "medium"
+    },
+    "feeling_tags": [
+      "controlled",
+      "precise",
+      "restrained"
+    ]
+  },
+  "preferences": {
+    "liked": [],
+    "disliked": []
+  },
+  "model_target": "generic",
+  "constraints": {
+    "must_include": [
+      "single subtle overshoot",
+      "one reduced rebound",
+      "early settle"
+    ],
+    "must_avoid": [
+      "raw tangent values",
+      "repeated bouncing"
+    ]
+  },
+  "expectations": {
+    "selected_all": [
+      "MM-024",
+      "MM-027"
+    ],
+    "must_exclude": []
+  },
+  "example_notice": "Placeholder asset names are not bundled media. The compiler never opens them."
+}

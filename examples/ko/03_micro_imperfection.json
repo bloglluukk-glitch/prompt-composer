@@ -1,0 +1,74 @@
+{
+  "fixture_id": "03_micro_imperfection",
+  "request_id": "dry-micro-imperfection",
+  "user_brief": "깨끗한 코팅 금속 제품이 천천히 회전한다.\n사선 하이라이트가 지나가는 순간에만 드문 미세 스크래치와\n낮은 대비의 표면 편차가 보인다.\n스크래치는 제품에 고정되어 있고 프레임마다 바뀌지 않는다.\n",
+  "input_mode": "text_only",
+  "assets": {
+    "start_image": null,
+    "middle_image": null,
+    "end_image": null,
+    "reference_images": [],
+    "reference_video": null
+  },
+  "output": {
+    "type": "video",
+    "duration_seconds": 6,
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080"
+  },
+  "subject": {
+    "description": "코팅 금속 제품",
+    "identity_must_remain": true,
+    "geometry_must_remain": true,
+    "logo_must_remain": true,
+    "composition_must_remain": true,
+    "background_must_remain": true
+  },
+  "motion_intent": {
+    "primary_action": "천천히 이어지는 제품 회전",
+    "camera_motion": "locked"
+  },
+  "visual_intent": {
+    "material": "고정된 드문 미세 스크래치와 낮은 대비 표면 편차",
+    "lighting": "사선 grazing highlight",
+    "camera": "locked",
+    "atmosphere": null,
+    "color": null,
+    "lens_effects": null
+  },
+  "curve": {
+    "curve_profile_id": null,
+    "curve_data": null,
+    "feeling_tags": []
+  },
+  "preferences": {
+    "liked": [],
+    "disliked": []
+  },
+  "model_target": "generic",
+  "constraints": {
+    "must_include": [
+      "surface-locked micro scratches",
+      "grazing highlight"
+    ],
+    "must_avoid": [
+      "texture swimming",
+      "displacement",
+      "random texture regeneration"
+    ]
+  },
+  "expectations": {
+    "selected_all": [
+      "MM-007",
+      "MM-015",
+      "RS-VM-001",
+      "RS-VM-019",
+      "RS-VM-021"
+    ],
+    "must_exclude": [
+      "RS-VM-020"
+    ]
+  },
+  "example_notice": "Placeholder asset names are not bundled media. The compiler never opens them."
+}

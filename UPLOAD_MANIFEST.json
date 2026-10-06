@@ -1,0 +1,203 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-06",
+  "public_files_including_manifest": 40,
+  "manifest_integrity": "This manifest lists the other 39 files; Git commits and release ZIP cover all 40 including this manifest.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 93,
+      "sha256": "6468b961af0ee2307ff04c796c188cd9a53be96533243774797a814d9732a722"
+    },
+    {
+      "path": "CHANGELOG.en.md",
+      "bytes": 722,
+      "sha256": "4f85175c2dd179b5d6085fb635c3f5acf0d711067d628a8573fdba7a55dbf7e1"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 717,
+      "sha256": "8f41f08862955320c9bce1e2cc61bc8a3cfc2a62e04e8fb5e0802fce39d76c97"
+    },
+    {
+      "path": "composer_config.json",
+      "bytes": 18674,
+      "sha256": "82397605b05effe38dd0c6f8ae34567bbbe9bc04cb5ac185ef5a267ae538256a"
+    },
+    {
+      "path": "composer_schema.sql",
+      "bytes": 1355,
+      "sha256": "7477363615c224b82ac56db6fd71d3d4ca6f992f2f4e211cf855246ca542a723"
+    },
+    {
+      "path": "CONTRIBUTING.en.md",
+      "bytes": 1316,
+      "sha256": "95a82f18d67c03f12d94336b931e8259e6555e0a3b81e27e2c5f934ce218325b"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1424,
+      "sha256": "baefa7e686ddef9a333a9f739355333f4405cff971c05b0f214c5ab61ae29b97"
+    },
+    {
+      "path": "data/knowledge.json",
+      "bytes": 44277,
+      "sha256": "92e4301c6f1d66ac9d9e1dc8e6041e1f90fd245dda0bba265478969db84bc4d7"
+    },
+    {
+      "path": "data/sources.json",
+      "bytes": 1412,
+      "sha256": "f7551eee6ebe7103cc3a1510324cd568a2dc662e28caeb10535c8e26eab6f5d5"
+    },
+    {
+      "path": "docs/ARCHITECTURE.en.md",
+      "bytes": 2573,
+      "sha256": "7e7332b3ceab2a08704f6864a7b9d2b155163a29a769b63537c66ac9d1ffff5b"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 2773,
+      "sha256": "9eb7c0e30f102793aeb14d1ea7e9a8c021cee3f0e794d1bfee6744258853d408"
+    },
+    {
+      "path": "docs/RELEASE_REPORT.en.md",
+      "bytes": 5130,
+      "sha256": "4e169c296b7d3418c2f03e2c06d3c74c3f191e8378a03c1ebb886f01f5661782"
+    },
+    {
+      "path": "docs/RELEASE_REPORT.md",
+      "bytes": 5300,
+      "sha256": "abf13b929190b16b1da27eff4f1b06f85d1e3902abd4a6bc157bea7c907b5a05"
+    },
+    {
+      "path": "docs/USAGE.en.md",
+      "bytes": 3211,
+      "sha256": "a978f64570433e4ee5a4de7b8f33afe7674b54d263b571359e667972573d64e2"
+    },
+    {
+      "path": "docs/USAGE.md",
+      "bytes": 3401,
+      "sha256": "dfc341df42ed3f462be415c70dc3b7e83e3e2731b3c3c3f3eac8a227591f53ac"
+    },
+    {
+      "path": "docs/VALIDATION.json",
+      "bytes": 768,
+      "sha256": "cc1f5ed6db491791315bbf18f60d2e45f94b2d34c8d26506c83fba3d05c17703"
+    },
+    {
+      "path": "examples/en/01_coat_reveal.json",
+      "bytes": 2103,
+      "sha256": "10b3b77a346900d1a172bd235d31d037ce641fc4672b9f27751b2567b1c492c4"
+    },
+    {
+      "path": "examples/en/02_sss_backlight.json",
+      "bytes": 2057,
+      "sha256": "e74cd1b64f5ce2afa92201406e126b7f3755ae1d6079881a78c146fd7e2e4db4"
+    },
+    {
+      "path": "examples/en/03_micro_imperfection.json",
+      "bytes": 1946,
+      "sha256": "515a95ed4f67fb02f118e72c454b52bdabf5630b4dc64565dfc46447e5e82b07"
+    },
+    {
+      "path": "examples/en/04_rack_focus.json",
+      "bytes": 1970,
+      "sha256": "a693f55e6749c9e163aec9216707d4f88b48072b75afcd3f65f196f15cfaaab8"
+    },
+    {
+      "path": "examples/en/05_fog_godrays.json",
+      "bytes": 2112,
+      "sha256": "e7cb266441c03c5c0e244e5f4874b9bed638a635e1382228549de083e7216d68"
+    },
+    {
+      "path": "examples/en/06_curve_timing.json",
+      "bytes": 2126,
+      "sha256": "2c59b0b56598e8ea008468998f39482b5442a814d04a208121df6665dd29b85a"
+    },
+    {
+      "path": "examples/ko/01_coat_reveal.json",
+      "bytes": 2193,
+      "sha256": "29e23d4c4e9125bf62be540f4eb371ff02a2b75df719616015eb8b041d526363"
+    },
+    {
+      "path": "examples/ko/02_sss_backlight.json",
+      "bytes": 2095,
+      "sha256": "d9cd031655f000f0bf940a2f08694c23028c3f3ed95626ecb1c1249f7059bd90"
+    },
+    {
+      "path": "examples/ko/03_micro_imperfection.json",
+      "bytes": 1998,
+      "sha256": "9cd7b7a78134003adf70fe07eb1259d8ec3374f6bbb64966910786525844c763"
+    },
+    {
+      "path": "examples/ko/04_rack_focus.json",
+      "bytes": 1948,
+      "sha256": "bca3fdf0f0328a9d93e6e3b0af6c0926987defd4b2d5f0ec22b5dd4147b4795f"
+    },
+    {
+      "path": "examples/ko/05_fog_godrays.json",
+      "bytes": 2104,
+      "sha256": "54568bd3269bb02ae8ea9a8b55398e9e61baacd98f5ef29d46db3390083ab59b"
+    },
+    {
+      "path": "examples/ko/06_curve_timing.json",
+      "bytes": 2096,
+      "sha256": "d1d406a8d298b233fce66516d4a84cf72598ab3a2cf027b41450004e4160598b"
+    },
+    {
+      "path": "examples/results/coat_reveal.en.md",
+      "bytes": 3658,
+      "sha256": "683fd0ed9006a24cb76d438266af89e7f43a2c4c6e6f96fc25d1f81718effecc"
+    },
+    {
+      "path": "examples/results/coat_reveal.ko.md",
+      "bytes": 3947,
+      "sha256": "beb112231065975a644bb0d3cbf9c8e8ee761dd160781129d54fef24f4cbedc1"
+    },
+    {
+      "path": "examples/results/dry_runs.json",
+      "bytes": 367667,
+      "sha256": "7c0dfc92b5ed6927f9d93c640d0486bc28224191171770ee2bf9d25fe8cf5047"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1074,
+      "sha256": "fa77d04e171f69440aa2d7332359437a8691760c7479bc0d967ca24ea1cdcf83"
+    },
+    {
+      "path": "prompt_composer.py",
+      "bytes": 61809,
+      "sha256": "0302bd3b3d3563757f79663859e8ddd35eb9dd91fb3ae539fec55a9364e2a612"
+    },
+    {
+      "path": "README.en.md",
+      "bytes": 4247,
+      "sha256": "ffef04ec61e664fbfc783910f54509f0634c905be1ab43a4a83e9a4474793f3b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4648,
+      "sha256": "250f2e8067a78ef4618fec2b1b9ed1df555c92647013cde59ead5739a2cc1ee4"
+    },
+    {
+      "path": "SOURCES.en.md",
+      "bytes": 3035,
+      "sha256": "53b6a866b9e673c82ab823580b8ed49886a9213372cf5b24ece2ac794105879c"
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 3167,
+      "sha256": "b1de3741b504fff44ac492ebc0e90d3841d085ad2b16e6b9f795ff995c1a95fb"
+    },
+    {
+      "path": "templates/request.json",
+      "bytes": 336,
+      "sha256": "ab18c0e7c893dfc2009f57c69f2ce4c90e8b45076162992583330ec511a22350"
+    },
+    {
+      "path": "validate_prompt_composer.py",
+      "bytes": 8608,
+      "sha256": "b7c868e7a2ec95cd44c8b423e6a1414e69a6c724ac6a76ee2fe6270cc4aa86a2"
+    }
+  ]
+}

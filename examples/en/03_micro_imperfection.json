@@ -1,0 +1,74 @@
+{
+  "fixture_id": "03_micro_imperfection-en",
+  "request_id": "dry-micro-imperfection-en",
+  "user_brief": "A clean coated-metal product rotates slowly.\nA diagonal highlight sweeps over sparse micro scratches and low-contrast surface variation.\nAll scratches remain surface-locked and do not regenerate between frames.",
+  "input_mode": "text_only",
+  "assets": {
+    "start_image": null,
+    "middle_image": null,
+    "end_image": null,
+    "reference_images": [],
+    "reference_video": null
+  },
+  "output": {
+    "type": "video",
+    "duration_seconds": 6,
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080"
+  },
+  "subject": {
+    "description": "a clean coated-metal product",
+    "identity_must_remain": true,
+    "geometry_must_remain": true,
+    "logo_must_remain": true,
+    "composition_must_remain": true,
+    "background_must_remain": true
+  },
+  "motion_intent": {
+    "primary_action": "slow rotation of the product",
+    "camera_motion": "locked"
+  },
+  "visual_intent": {
+    "material": "surface-locked micro scratches and low-contrast roughness variation",
+    "lighting": "diagonal grazing highlight",
+    "camera": "locked",
+    "atmosphere": null,
+    "color": null,
+    "lens_effects": null
+  },
+  "curve": {
+    "curve_profile_id": null,
+    "curve_data": null,
+    "feeling_tags": []
+  },
+  "preferences": {
+    "liked": [],
+    "disliked": []
+  },
+  "model_target": "generic",
+  "constraints": {
+    "must_include": [
+      "surface-locked micro scratches",
+      "grazing highlight"
+    ],
+    "must_avoid": [
+      "texture swimming",
+      "displacement",
+      "random texture regeneration"
+    ]
+  },
+  "expectations": {
+    "selected_all": [
+      "MM-007",
+      "MM-015",
+      "RS-VM-001",
+      "RS-VM-019",
+      "RS-VM-021"
+    ],
+    "must_exclude": [
+      "RS-VM-020"
+    ]
+  },
+  "example_notice": "Placeholder asset names are not bundled media. The compiler never opens them."
+}

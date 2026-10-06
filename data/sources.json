@@ -1,0 +1,38 @@
+{
+  "motion_sweep": {
+    "title": "Cinema 4D Linear Field",
+    "url": "https://help.maxon.net/c4d/2026/en-us/Content/html/FLINEAR.html"
+  },
+  "motion_drift": {
+    "title": "Cinema 4D Time Effector",
+    "url": "https://help.maxon.net/c4d/2026/en-us/Content/html/OETIME.html"
+  },
+  "motion_ease": {
+    "title": "Cinema 4D Keys and Interpolation",
+    "url": "https://help.maxon.net/c4d/2025/en-us/Content/html/10616.html"
+  },
+  "motion_speed": {
+    "title": "Cinema 4D Time Track",
+    "url": "https://help.maxon.net/c4d/2026/en-us/Content/html/10834.html"
+  },
+  "material": {
+    "title": "Redshift Standard Material",
+    "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Standard_Material.html"
+  },
+  "lighting": {
+    "title": "Redshift Physical Light",
+    "url": "https://help.maxon.net/c4d/2025/en-us/Subsystems/Default/Content/html/Physical%2BLight.html"
+  },
+  "light_parameters": {
+    "title": "Common Redshift Light Parameters",
+    "url": "https://help.maxon.net/c4d/2026/en-us/Content/_REDSHIFT_/html/Common%2BRedshift%2BLight%2BParameters.html"
+  },
+  "camera": {
+    "title": "Redshift Camera",
+    "url": "https://help.maxon.net/c4d/en-us/Content/_REDSHIFT_/html/Redshift_Camera_Object.html"
+  },
+  "atmosphere": {
+    "title": "Redshift Standard Volume",
+    "url": "https://help.maxon.net/c4d/2026/en-us/Content/_REDSHIFT_/html/Material%2BStandard%2BVolume.html"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "fixture_id": "02_sss_backlight-en",
+  "request_id": "dry-sss-backlight-en",
+  "user_brief": "A solid translucent object initially looks dense.\nThe backlight increases, revealing internal diffusion through thin edges.\nSurface highlights remain continuous and the object does not become transparent or melt.",
+  "input_mode": "text_only",
+  "assets": {
+    "start_image": null,
+    "middle_image": null,
+    "end_image": null,
+    "reference_images": [],
+    "reference_video": null
+  },
+  "output": {
+    "type": "video",
+    "duration_seconds": 4,
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080"
+  },
+  "subject": {
+    "description": "a solid translucent object",
+    "identity_must_remain": true,
+    "geometry_must_remain": true,
+    "logo_must_remain": true,
+    "composition_must_remain": true,
+    "background_must_remain": true
+  },
+  "motion_intent": {
+    "primary_action": "one backlight reveal",
+    "settle": "stable"
+  },
+  "visual_intent": {
+    "material": "solid translucent material with subsurface internal diffusion",
+    "lighting": "backlight and thin edge illumination",
+    "camera": "locked",
+    "atmosphere": null,
+    "color": null,
+    "lens_effects": null
+  },
+  "curve": {
+    "curve_profile_id": null,
+    "curve_data": null,
+    "feeling_tags": []
+  },
+  "preferences": {
+    "liked": [],
+    "disliked": []
+  },
+  "model_target": "generic",
+  "constraints": {
+    "must_include": [
+      "subsurface edge illumination",
+      "surface highlight continuity"
+    ],
+    "must_avoid": [
+      "transmission",
+      "opacity fade",
+      "melt",
+      "full-frame glow"
+    ]
+  },
+  "expectations": {
+    "selected_all": [
+      "RS-VM-001",
+      "RS-VM-016"
+    ],
+    "selected_any": [
+      [
+        "MM-007",
+        "MM-024"
+      ],
+      [
+        "RS-VM-009",
+        "RS-VM-001"
+      ]
+    ],
+    "must_exclude": [
+      "RS-VM-015",
+      "RS-VM-018",
+      "RS-VM-027"
+    ]
+  },
+  "example_notice": "Placeholder asset names are not bundled media. The compiler never opens them."
+}

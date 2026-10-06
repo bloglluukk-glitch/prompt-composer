@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-06",
+  "status": "pass",
+  "behavior_tests": {
+    "run": 20,
+    "passed": 20,
+    "failed": 0
+  },
+  "bilingual_example_dry_runs": {
+    "fixtures": 12,
+    "passed": 12,
+    "failed": 0
+  },
+  "language_pairs_same_selected_cards": 6,
+  "public_knowledge_cards": 23,
+  "motion_cards": 4,
+  "redshift_cards": 19,
+  "third_party_python_dependencies": 0,
+  "tested_environment": {
+    "python": "3.12.14",
+    "system": "Windows"
+  },
+  "fresh_directory_execution": "pass",
+  "generation_model_calls": 0,
+  "actual_render_tests": 0,
+  "notes": [
+    "Tests verify composition, parsing, provenance and portability; not generation quality.",
+    "Example image filenames are placeholders; no images are read or supplied."
+  ]
+}

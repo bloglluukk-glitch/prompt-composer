@@ -1,0 +1,569 @@
+{
+  "version": "0.1.0-public",
+  "ranking": {
+    "selection_threshold": 16,
+    "weights": {
+      "direct_intent_match": 14,
+      "visual_signature_match": 3,
+      "input_mode_suitability": 2,
+      "mandatory_event_match": 6,
+      "user_preference_match": 4,
+      "available_reference_match": 3,
+      "related_mechanism_support": 4,
+      "conflict_penalty": 45,
+      "ambiguity_penalty": 8,
+      "derived_only_penalty": 8
+    }
+  },
+  "limits": {
+    "motion_primary": 3,
+    "motion_supporting": 2,
+    "material": 2,
+    "lighting": 2,
+    "camera": 1,
+    "atmosphere_or_lens": 1,
+    "total": 8
+  },
+  "prompt_limits": {
+    "concise_en_words": [
+      60,
+      100
+    ],
+    "detailed_en_words": [
+      120,
+      180
+    ],
+    "negative_items": [
+      6,
+      12
+    ],
+    "temporal_steps": [
+      4,
+      6
+    ]
+  },
+  "adapter": {
+    "name": "generic",
+    "supported_inputs": [
+      "text_only",
+      "start_only",
+      "start_end",
+      "start_middle_end",
+      "reference_video"
+    ],
+    "prompt_format": "observable natural-language clauses with a separate temporal sequence",
+    "negative_format": "comma-separated observable failure signatures",
+    "keyframe_strategy": "describe the role of each supplied frame without claiming exact interpolation",
+    "limitations": [
+      "No provider-specific syntax or capability is assumed.",
+      "Exact frame timing, curve tangents, and reference adherence require generation tests.",
+      "The adapter never calls an external model."
+    ]
+  },
+  "mechanism_aliases": {
+    "MM-007": [
+      "하이라이트가 왼쪽에서 오른쪽",
+      "좁은 하이라이트",
+      "사선 하이라이트",
+      "빛이 지나",
+      "highlight sweep",
+      "left to right",
+      "directional reveal",
+      "뒤쪽 조명이 강해지",
+      "틈이 열리면서",
+      "하이라이트 스윕",
+      "방향성 리빌",
+      "backlight increases",
+      "opening gap",
+      "gap opens"
+    ],
+    "MM-015": [
+      "천천히 회전",
+      "일정하게 회전",
+      "slow continuous rotation",
+      "constant drift",
+      "slow rotation",
+      "rotates slowly",
+      "constant rotation"
+    ],
+    "MM-024": [
+      "오버슈트",
+      "안정",
+      "초점이 이동",
+      "부드럽게 감속",
+      "overshoot",
+      "smooth deceleration",
+      "settles",
+      "focus transfer",
+      "settle",
+      "rack focus"
+    ],
+    "MM-027": [
+      "속도 변화",
+      "speed ramp",
+      "빠르게 가속",
+      "fast acceleration",
+      "quick acceleration",
+      "accelerates quickly",
+      "decelerates smoothly",
+      "acceleration"
+    ],
+    "RS-VM-001": [
+      "area light",
+      "좁은 하이라이트",
+      "사선 하이라이트",
+      "뒤쪽 조명",
+      "grazing light",
+      "backlight",
+      "narrow highlight",
+      "diagonal highlight",
+      "grazing highlight"
+    ],
+    "RS-VM-003": [
+      "방향성 있는 빛줄기",
+      "틈에 연결",
+      "directional light shafts",
+      "focused beam",
+      "directional source",
+      "directional light",
+      "source-connected",
+      "physical light source"
+    ],
+    "RS-VM-006": [
+      "좁은 반사",
+      "반사 길이",
+      "narrow reflection",
+      "directionality",
+      "light spread"
+    ],
+    "RS-VM-009": [
+      "얇은 가장자리부터 내부 빛",
+      "가장자리 빛",
+      "edge backlight",
+      "rim separation",
+      "thin edge",
+      "edge illumination",
+      "rim light"
+    ],
+    "RS-VM-011": [
+      "새틴",
+      "roughness",
+      "반사 폭",
+      "낮은 대비의 표면 편차",
+      "satin metal",
+      "satin-metal",
+      "satin silver",
+      "roughness variation",
+      "satin surface"
+    ],
+    "RS-VM-014": [
+      "코팅층",
+      "얇은 투명 코팅",
+      "transparent coating layer",
+      "coat layer",
+      "clear coat",
+      "transparent coat",
+      "coating layer"
+    ],
+    "RS-VM-015": [
+      "투명",
+      "transmission",
+      "refraction",
+      "transparent object"
+    ],
+    "RS-VM-016": [
+      "반투명 오브젝트",
+      "내부 빛",
+      "subsurface",
+      "translucent solid",
+      "sss",
+      "solid translucent",
+      "internal diffusion"
+    ],
+    "RS-VM-018": [
+      "자체 발광",
+      "emission",
+      "emissive surface",
+      "self-emitting"
+    ],
+    "RS-VM-019": [
+      "미세 스크래치",
+      "표면 편차",
+      "bump normal",
+      "micro scratch relief",
+      "micro scratches",
+      "micro-scratch",
+      "shading normal",
+      "grazing highlight"
+    ],
+    "RS-VM-020": [
+      "실루엣 변형",
+      "실제 표면 형상",
+      "displacement",
+      "changing geometry"
+    ],
+    "RS-VM-021": [
+      "미세 스크래치",
+      "사용감",
+      "micro surface imperfection",
+      "surface-locked scratches",
+      "micro scratches",
+      "micro-scratch",
+      "surface-locked",
+      "surface imperfection"
+    ],
+    "RS-VM-022": [
+      "초점거리",
+      "원근 압축",
+      "focal length",
+      "camera distance"
+    ],
+    "RS-VM-023": [
+      "초점이 전경에서",
+      "제품 로고로 이동",
+      "흐리게 보이고",
+      "rack focus",
+      "depth of field",
+      "bokeh",
+      "focus transfer",
+      "foreground",
+      "depth-dependent bokeh"
+    ],
+    "RS-VM-024": [
+      "노출",
+      "exposure",
+      "brightness adaptation"
+    ],
+    "RS-VM-027": [
+      "bloom",
+      "flare",
+      "streak",
+      "vignette",
+      "lens distortion"
+    ],
+    "RS-VM-028": [
+      "안개",
+      "거리 안개",
+      "fog",
+      "aerial perspective",
+      "thin fog"
+    ],
+    "RS-VM-029": [
+      "빛줄기",
+      "얇은 안개",
+      "매질",
+      "volume scattering",
+      "atmospheric medium",
+      "participating medium",
+      "light shafts"
+    ],
+    "RS-VM-030": [
+      "빛줄기",
+      "틈이 열리",
+      "광원과 틈에 연결",
+      "god rays",
+      "light shafts",
+      "occluding gap",
+      "source-connected"
+    ]
+  },
+  "negative_evidence": {
+    "RS-VM-015": [
+      "투명해지거나 녹지 않는다",
+      "투명해지지 않는다",
+      "no transmission",
+      "not transparent",
+      "transparent coating layer",
+      "얇은 투명 코팅",
+      "코팅층",
+      "does not become transparent",
+      "not become transparent",
+      "thin transparent coat",
+      "clear coat"
+    ],
+    "RS-VM-018": [
+      "glow 방지",
+      "no glow",
+      "자체 발광이 아니다"
+    ],
+    "RS-VM-020": [
+      "실루엣은 변하지 않는다",
+      "no displacement",
+      "geometry unchanged",
+      "silhouette unchanged"
+    ],
+    "RS-VM-027": [
+      "flat blur",
+      "no bloom",
+      "no flare",
+      "depth-dependent bokeh only"
+    ]
+  },
+  "dependency_rules": {
+    "RS-VM-009": {
+      "requires_any": [
+        "RS-VM-001",
+        "RS-VM-003"
+      ]
+    },
+    "RS-VM-021": {
+      "requires_any": [
+        "RS-VM-019",
+        "RS-VM-011"
+      ]
+    },
+    "RS-VM-030": {
+      "requires_all": [
+        "RS-VM-029"
+      ],
+      "requires_any": [
+        "RS-VM-003",
+        "RS-VM-001"
+      ]
+    }
+  },
+  "conflict_rules": [
+    {
+      "left": "RS-VM-016",
+      "right": "RS-VM-015",
+      "label": "SSS vs Transmission",
+      "resolution": "Keep internal diffusion and edge thickness; exclude whole-object transparency unless explicitly requested."
+    },
+    {
+      "left": "RS-VM-018",
+      "right": "RS-VM-027",
+      "label": "Emission vs Bloom",
+      "resolution": "Separate self-emitting surface energy from bright-pixel lens spread."
+    },
+    {
+      "left": "RS-VM-023",
+      "right": "RS-VM-027",
+      "label": "Bokeh vs Bloom",
+      "resolution": "Keep depth-dependent defocus; exclude glow around every bright pixel."
+    },
+    {
+      "left": "RS-VM-028",
+      "right": "flat_overlay",
+      "label": "Fog vs Flat Overlay",
+      "resolution": "Keep progressive depth visibility; exclude a uniform white screen layer."
+    },
+    {
+      "left": "RS-VM-029",
+      "right": "RS-VM-016",
+      "label": "Volume Scattering vs SSS",
+      "resolution": "Keep light transport in the surrounding medium separate from diffusion inside the object."
+    },
+    {
+      "left": "RS-VM-019",
+      "right": "RS-VM-020",
+      "label": "Bump/Normal vs Displacement",
+      "resolution": "Keep shading-normal micro detail when silhouette and geometry must remain unchanged."
+    },
+    {
+      "left": "RS-VM-011",
+      "right": "RS-VM-021",
+      "label": "Roughness vs Micro Surface Imperfection",
+      "resolution": "Use roughness for reflection width and the derived imperfection look only for sparse localized variation."
+    },
+    {
+      "left": "RS-VM-024",
+      "right": "lighting_intensity",
+      "label": "Exposure vs Lighting Intensity",
+      "resolution": "Do not replace a requested light change with a global exposure change."
+    },
+    {
+      "left": "RS-VM-022",
+      "right": "camera_distance",
+      "label": "Focal Length vs Camera Distance",
+      "resolution": "Separate field-of-view and perspective changes from moving the camera."
+    },
+    {
+      "left": "RS-VM-023",
+      "right": "flat_blur",
+      "label": "DOF vs Full-frame Blur",
+      "resolution": "Keep a depth-dependent focus plane and preserve sharp subject regions."
+    },
+    {
+      "left": "RS-VM-009",
+      "right": "standalone_feature",
+      "label": "Rim Light vs Standalone Redshift Feature",
+      "resolution": "Mark Rim Light as a derived lighting arrangement and retain a physical light component."
+    },
+    {
+      "left": "RS-VM-030",
+      "right": "standalone_feature",
+      "label": "God Rays vs Standalone Redshift Feature",
+      "resolution": "Mark God Rays as a derived combination of light, participating medium, and occlusion."
+    }
+  ],
+  "subject_english_map": {
+    "새틴 메탈 제품": "a satin-metal hero product",
+    "반투명 오브젝트": "a solid translucent object",
+    "코팅 금속 제품": "a clean coated-metal product",
+    "뒤쪽 제품": "a product positioned behind a foreground object",
+    "제품 실루엣": "a readable product silhouette in a dark space",
+    "단일 이동": "a product making one controlled movement"
+  },
+  "context_fragments": {
+    "MM-007": {
+      "lighting": "a narrow highlight sweeps across the surface in the requested direction, revealing detail without moving the object",
+      "default": "a soft activation front travels continuously in the requested direction and reveals one controlled change"
+    },
+    "MM-015": {
+      "rotation": "the product rotates slowly at a constant rate while every attached surface detail remains locked to it",
+      "default": "one continuous low-speed drift proceeds without acceleration or random direction changes"
+    },
+    "MM-024": {
+      "focus": "focus transfers smoothly from the foreground to the product, then settles with no camera-body movement",
+      "overshoot": "the primary change approaches its target, applies only the explicitly requested overshoot and reduced rebound, and settles",
+      "default": "the primary change eases in and decelerates smoothly near its final state without extra rebound"
+    },
+    "MM-027": {
+      "curve": "the action follows the supplied relative speed profile without exposing raw graph values or exact tangent numbers",
+      "default": "the action changes speed only where explicitly requested and keeps one continuous direction"
+    },
+    "RS-VM-001": {
+      "default": "use one broad controlled light source to define a readable highlight width and a coherent soft shadow"
+    },
+    "RS-VM-003": {
+      "default": "a confined directional light passes through the stated opening and remains connected to its physical source"
+    },
+    "RS-VM-009": {
+      "default": "place a physical back or side light so a thin edge separates from the background without becoming a standalone effect"
+    },
+    "RS-VM-011": {
+      "default": "keep a satin reflection broad and restrained while preserving the base color and fine surface texture"
+    },
+    "RS-VM-014": {
+      "default": "reveal a thin clear top reflection layer separately from the underlying satin-metal reflection"
+    },
+    "RS-VM-016": {
+      "default": "keep the object solid while backlight diffuses through thin regions and leaves thicker regions comparatively dense"
+    },
+    "RS-VM-019": {
+      "default": "let grazing highlights reveal shallow surface-normal detail while geometry and silhouette remain unchanged"
+    },
+    "RS-VM-021": {
+      "default": "combine sparse surface-locked scratches with low-contrast roughness variation; keep every mark fixed to the product"
+    },
+    "RS-VM-023": {
+      "default": "preserve sharp product geometry at the active focus plane and keep defocus dependent on scene depth"
+    },
+    "RS-VM-028": {
+      "default": "reduce distant contrast progressively through scene depth while keeping near product edges readable"
+    },
+    "RS-VM-029": {
+      "default": "let light scatter only inside the participating medium with gradual distance attenuation and spatially locked density"
+    },
+    "RS-VM-030": {
+      "default": "build visible light shafts from a directional source, participating medium, and a physical gap that shapes the rays"
+    },
+    "RS-VM-006": {
+      "default": "Describe the light spread and direction separately so the reflection concentration has a stated cause."
+    },
+    "RS-VM-015": {
+      "default": "Use transmission and refraction only for the explicitly requested transparent material while maintaining its solid geometry."
+    },
+    "RS-VM-018": {
+      "default": "Keep surface emission distinct from a lens or post-processing glow."
+    },
+    "RS-VM-020": {
+      "default": "Change actual surface geometry only when explicitly requested, and check against shape-preservation constraints."
+    },
+    "RS-VM-022": {
+      "default": "Distinguish a focal-length change in field of view from moving the camera position."
+    },
+    "RS-VM-024": {
+      "default": "Separate a global camera-exposure change from a local lighting change."
+    },
+    "RS-VM-027": {
+      "default": "Apply only the requested restrained lens effects; keep defocus and surface emission separate."
+    }
+  },
+  "knowledge_file": "data/knowledge.json",
+  "context_fragments_ko": {
+    "MM-007": {
+      "lighting": "피사체를 움직이지 않고 요청한 방향으로 좁은 하이라이트가 표면을 지나가게 한다",
+      "default": "한 방향의 연속적인 리빌로 요청한 변화 하나를 드러낸다"
+    },
+    "MM-015": {
+      "rotation": "제품을 낮은 일정 속도로 회전시키고 표면의 흔적은 제품에 고정한다",
+      "default": "가속이나 임의 방향 전환 없이 낮은 일정 속도로 이동한다"
+    },
+    "MM-024": {
+      "focus": "카메라 몸체는 고정하고 전경에서 제품으로 초점을 부드럽게 이동시킨 뒤 안정시킨다",
+      "overshoot": "목표 상태에 접근한 뒤 명시한 작은 오버슈트와 줄어든 반동을 적용하고 안정시킨다",
+      "default": "초반 변화는 부드럽게 시작하고 목표 상태 가까이에서 감속한다"
+    },
+    "MM-027": {
+      "curve": "제공된 상대 속도 순서를 따라가며 원시 탄젠트 값이나 정확한 프레임 수치를 추정하지 않는다",
+      "default": "요청한 구간에서만 속도를 바꾸고 이동 방향은 연속적으로 유지한다"
+    },
+    "RS-VM-001": {
+      "default": "물리적인 면광원으로 읽을 수 있는 반사 폭과 일관된 부드러운 그림자를 만든다"
+    },
+    "RS-VM-003": {
+      "default": "지정한 틈을 통과하는 집중광을 실제 광원의 위치와 연결한다"
+    },
+    "RS-VM-006": {
+      "default": "광원의 방사 범위와 방향성을 구분해 반사의 집중도를 조절한다"
+    },
+    "RS-VM-009": {
+      "default": "후면 또는 측면의 물리 광원으로 얇은 윤곽을 분리한다"
+    },
+    "RS-VM-011": {
+      "default": "기본 표면색과 미세결을 유지하면서 새틴 반사를 넓고 절제되게 만든다"
+    },
+    "RS-VM-014": {
+      "default": "기본 새틴 반사와 구분되는 얇은 상부 코팅 반사를 보여준다"
+    },
+    "RS-VM-015": {
+      "default": "명시한 투명 재질에서만 투과와 굴절을 설명하고 고체 형태는 유지한다"
+    },
+    "RS-VM-016": {
+      "default": "고체 형태를 유지하면서 얇은 영역의 내부 산란과 두꺼운 영역의 밀도를 구분한다"
+    },
+    "RS-VM-018": {
+      "default": "물체 자체의 발광을 후처리 번짐과 구분한다"
+    },
+    "RS-VM-019": {
+      "default": "표면 법선의 미세결을 사선 하이라이트로 드러내고 실루엣은 바꾸지 않는다"
+    },
+    "RS-VM-020": {
+      "default": "명시적으로 요청한 경우에만 실제 표면 형상을 바꾸고 형상 보존 조건과 충돌하는지 확인한다"
+    },
+    "RS-VM-021": {
+      "default": "드문 미세 스크래치와 낮은 대비의 거칠기 편차를 제품 표면에 고정한다"
+    },
+    "RS-VM-022": {
+      "default": "초점거리의 화각 변화와 카메라 위치 이동을 구분해 기록한다"
+    },
+    "RS-VM-023": {
+      "default": "초점면의 제품은 선명하게 유지하고 흐림은 깊이에 따라 달라지게 한다"
+    },
+    "RS-VM-024": {
+      "default": "카메라 노출의 전체 밝기 변화와 광원의 국소 변화는 분리한다"
+    },
+    "RS-VM-027": {
+      "default": "명시한 렌즈 효과만 절제되게 사용하고 초점 흐림이나 자체 발광과 섞지 않는다"
+    },
+    "RS-VM-028": {
+      "default": "먼 영역의 대비를 깊이에 따라 줄이고 가까운 제품의 경계는 읽히게 한다"
+    },
+    "RS-VM-029": {
+      "default": "공간에 고정된 참여 매질 안에서 빛의 산란과 거리 감쇠를 보여준다"
+    },
+    "RS-VM-030": {
+      "default": "광원·참여 매질·차폐 틈을 함께 사용해 빛줄기를 구성한다"
+    }
+  },
+  "subject_korean_map": {
+    "a satin-metal hero product": "새틴 메탈 제품",
+    "a solid translucent object": "반투명 오브젝트",
+    "a clean coated-metal product": "코팅 금속 제품",
+    "a product positioned behind a foreground object": "뒤쪽 제품",
+    "a readable product silhouette in a dark space": "제품 실루엣",
+    "one controlled subject movement": "단일 이동",
+    "a product making one controlled movement": "단일 이동하는 제품"
+  }
+}

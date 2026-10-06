@@ -1,0 +1,84 @@
+{
+  "fixture_id": "02_sss_backlight",
+  "request_id": "dry-sss-backlight",
+  "user_brief": "단단하고 불투명해 보이는 반투명 오브젝트가 있다.\n뒤쪽 조명이 강해지면서 얇은 가장자리부터 내부 빛이 드러난다.\n표면 하이라이트는 유지되고, 오브젝트는 투명해지거나 녹지 않는다.\n",
+  "input_mode": "text_only",
+  "assets": {
+    "start_image": null,
+    "middle_image": null,
+    "end_image": null,
+    "reference_images": [],
+    "reference_video": null
+  },
+  "output": {
+    "type": "video",
+    "duration_seconds": 4,
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080"
+  },
+  "subject": {
+    "description": "반투명 오브젝트",
+    "identity_must_remain": true,
+    "geometry_must_remain": true,
+    "logo_must_remain": true,
+    "composition_must_remain": true,
+    "background_must_remain": true
+  },
+  "motion_intent": {
+    "primary_action": "뒤쪽 조명이 강해지는 단일 리빌",
+    "settle": "stable"
+  },
+  "visual_intent": {
+    "material": "단단한 반투명 재질과 내부 산란",
+    "lighting": "뒤쪽 조명과 얇은 가장자리 빛",
+    "camera": "locked",
+    "atmosphere": null,
+    "color": null,
+    "lens_effects": null
+  },
+  "curve": {
+    "curve_profile_id": null,
+    "curve_data": null,
+    "feeling_tags": []
+  },
+  "preferences": {
+    "liked": [],
+    "disliked": []
+  },
+  "model_target": "generic",
+  "constraints": {
+    "must_include": [
+      "subsurface edge illumination",
+      "surface highlight continuity"
+    ],
+    "must_avoid": [
+      "transmission",
+      "opacity fade",
+      "melt",
+      "full-frame glow"
+    ]
+  },
+  "expectations": {
+    "selected_all": [
+      "RS-VM-001",
+      "RS-VM-016"
+    ],
+    "selected_any": [
+      [
+        "MM-007",
+        "MM-024"
+      ],
+      [
+        "RS-VM-009",
+        "RS-VM-001"
+      ]
+    ],
+    "must_exclude": [
+      "RS-VM-015",
+      "RS-VM-018",
+      "RS-VM-027"
+    ]
+  },
+  "example_notice": "Placeholder asset names are not bundled media. The compiler never opens them."
+}
